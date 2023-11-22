@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>30qsom79mwk0a</unique-id>
+    <saved-with-version>27500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bg" sid="911935017837286">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Backgrounds\set1_background.png" />
+        </object-type>
+        <object-type name="ground" sid="694954965994130">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="575894006492342">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+        </object-type>
+        <object-type name="kkk" sid="858547894924857">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_03.png" />
+        </object-type>
+        <object-type name="player" sid="753058504617300">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="318251657911133">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="614218978858974">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="458208003849549">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="688774897364055" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_stand.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="621548235687405" speed="7">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk1.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.511111" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk2.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.511111" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk3.png" />
+                </animation>
+                <animation framecount="2" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="436149930113694" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up1.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="352132061185617">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Box" sid="204655146702102">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="627080346510530">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="153188294455144">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718390555064739" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\test\test.png">
+                        <collision-poly>
+                            <point x="0.035" y="0.07" />
+                            <point x="0.5" y="0" />
+                            <point x="0.965" y="0.07" />
+                            <point x="0.895" y="0.5" />
+                            <point x="0.79" y="0.58" />
+                            <point x="0.5" y="1" />
+                            <point x="0.21" y="0.58" />
+                            <point x="0.105" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="843413462597585">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="box1" sid="993444660299522">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="826048831268189">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323214724398252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_07.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemy1" sid="879440455770067">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="712055446269599" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="546064701003817">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="176772179218733">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="907406860599681" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="846212786710343" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.512195" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="emeny2" sid="985292154046753">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="872895455060543">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="884315819389694">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="813894889556112">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="WalkFLy" pingpong="0" repeatcount="1" repeatto="0" sid="877709080345004" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_3.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="939152026745805" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bot1" sid="967457838863359">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="571178988400509">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382856486603178" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="emny3" sid="611433729398082">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="410184458883849">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="872343600638102">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Noob" pingpong="0" repeatcount="1" repeatto="0" sid="497211086390986" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\VL Cyber\Downloads\Construct 2 and plugin-20231115T075932Z-001\Construct 2 and plugin\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_1.png">
+                        <collision-poly>
+                            <point x="0.0238095" y="0.025" />
+                            <point x="0.97619" y="0.025" />
+                            <point x="0.97619" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0238095" y="0.975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player2" sid="519574319114285">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="906390281223262">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="294007918486307">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="434663822415880" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\VL Cyber\Downloads\372138902_310297924740169_6301141704387425837_n.jpg">
+                        <collision-poly>
+                            <point x="0.2" y="0.150943" />
+                            <point x="0.5" y="0.0188679" />
+                            <point x="0.875" y="0.0943396" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.65" y="0.735849" />
+                            <point x="0.5" y="0.811321" />
+                            <point x="0.075" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

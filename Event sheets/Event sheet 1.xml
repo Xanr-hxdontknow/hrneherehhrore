@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="965869314288313">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="396244347032007" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="282320336555546" type="player">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="149561044959543">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="766072009405748" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="279422989074850" type="player">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="364624980737869">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="462376121436928" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="677341757801255" type="player">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="334287280049988">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="268387378061422" type="player" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="766153011603160">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="256789126573848" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="119140284666303" type="player">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="552562762929344">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="685850005934806" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="369116291150655" type="player">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="134278168651056">
+            <conditions>
+                <condition id="2" name="Key is down" sid="659515745765082" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="410665070800401" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="792678978850441">
+            <conditions>
+                <condition id="2" name="Key is down" sid="587201938334508" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="707151518407379" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="885921298459366">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="906291788494504" type="enemy1" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="512586173599425">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="393415832844459" type="enemy1">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;R&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="201505170989022" type="enemy1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="422198286427142" type="enemy1">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="631107376694021">
+                    <conditions>
+                        <condition behavior="Platform" id="10" name="Is by wall" sid="415377291936391" type="enemy1">
+                            <param id="0" name="Side">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="945304744306143" type="enemy1">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Value">&quot;L&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="217479069135414">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="558789627077813" type="enemy1">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;L&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="474298012632899" type="enemy1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="583517367705609" type="enemy1">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="119641428179622">
+                    <conditions>
+                        <condition behavior="Platform" id="10" name="Is by wall" sid="448071672430375" type="enemy1">
+                            <param id="0" name="Side">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="547067517288770" type="enemy1">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Value">&quot;R&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="920254193526767">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="730197356068538" type="player">
+                    <param id="0" name="Object">emny3</param>
+                </condition>
+                <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="479601406075247" type="player" />
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="112215603819007" type="player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="607261451565399">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="837749945227068" type="player">
+                    <param id="0" name="Object">enemy1</param>
+                </condition>
+                <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="367454422717910" type="player" />
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="542288440950210" type="player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="630938899022009">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="684585921965966" type="player">
+                    <param id="0" name="Object">emeny2</param>
+                </condition>
+                <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="429645346841600" type="player" />
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="536625103479127" type="player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="859428725980423">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="764337594425833" type="player">
+                    <param id="0" name="Object">enemy1</param>
+                </condition>
+                <condition behavior="Platform" id="4" name="Is falling" sid="181607153975291" type="player" />
+                <condition id="2" inverted="1" name="Is playing" sid="391718508387291" type="enemy1">
+                    <param id="0" name="Animation">&quot;Dead&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="988779000855700" type="enemy1">
+                    <param id="0" name="Animation">&quot;Dead&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="658462027456764" type="player">
+                    <param id="0" name="Vector Y">-600</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
